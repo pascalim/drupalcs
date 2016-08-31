@@ -1,4 +1,4 @@
-FROM php:7.0.9-alpine
+FROM php:7.0-alpine
 
 COPY php/ /usr/local/etc/php/conf.d/
 
