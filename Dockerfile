@@ -9,6 +9,7 @@ ARG CODER_VERSION=8.2.9
 RUN set -xe \
     && apk add --no-cache --virtual .build-deps \
       git \
+      curl \
     && curl -sSL https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer \
     && composer global require drupal/coder:"${CODER_VERSION}" \
     && phpcs --config-set installed_paths "${COMPOSER_HOME}/vendor/drupal/coder/coder_sniffer" \
