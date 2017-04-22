@@ -4,7 +4,7 @@ ENV COMPOSER_HOME=/composer \
     COMPOSER_ALLOW_SUPERUSER=1 \
     PATH=/composer/vendor/bin:$PATH
 
-ARG CODER_VERSION=8.2.9
+ARG CODER_VERSION=8.2.12
 
 RUN set -xe \
     && apk add --no-cache --virtual .build-deps \
