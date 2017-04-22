@@ -1,4 +1,4 @@
-FROM php:7.0-alpine
+FROM php:7.1-alpine
 
 ENV COMPOSER_HOME=/composer \
     COMPOSER_ALLOW_SUPERUSER=1 \
