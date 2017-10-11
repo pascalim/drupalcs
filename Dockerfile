@@ -19,4 +19,4 @@ COPY php/ /usr/local/etc/php/conf.d/
 
 WORKDIR /workspace
 
-CMD ["phpcs", "--standard=Drupal", "--extensions=php,module,inc,install,test,profile,theme", "/workspace"]
+CMD ["phpcs", "--standard=Drupal", "--ignore=node_modules,*.css,*.md,*.txt", "/workspace"]
