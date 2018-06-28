@@ -13,5 +13,5 @@ Usage
 2.  Generate a coder report for the current directory
 
     ``` sh
-    $ docker run --rm -v "$(PWD)":/workspace -it dots/drupalcs >> coder_report.txt
+    $ docker run --rm -v "$(PWD)":/app -it dots/drupalcs >> coder_report.txt
     ```
