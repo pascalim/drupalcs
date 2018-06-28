@@ -1,6 +1,6 @@
 FROM composer:1.6
 
-ENV PATH=/tmp/vendor/bin:$PATH
+ENV PATH /tmp/vendor/bin:$PATH
 
 ENV CODER_VERSION 8.2.12
 
